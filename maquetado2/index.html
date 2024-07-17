@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Pasaporte</title>
+  <style>
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 1em;
+      border: 1px solid #ccc;
+      border-radius: 1em;
+    }
+    div + div {
+      margin-top: 1em;
+    }
+    label {
+      display: inline-block;
+      width: 180px;
+      text-align: right;
+    }
+    input {
+      font: 1em sans-serif;
+      width: 300px;
+      box-sizing: border-box;
+      border: 1px solid #999;
+    }
+    input:focus {
+      border-color: #000;
+    }
+    .short-input {
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <div>
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" placeholder="Apellido (como se muestra en su pasaporte)">
+    </div>
+    <div>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Solo nombre">
+    </div>
+    <div>
+      <label for="fecha-nacimiento-dia">Fecha de nacimiento:</label>
+      <input type="number" id="fecha-nacimiento-dia" name="fecha-nacimiento-dia" class="short-input" placeholder="Día">
+      <input type="number" id="fecha-nacimiento-mes" name="fecha-nacimiento-mes" class="short-input" placeholder="Mes">
+      <input type="number" id="fecha-nacimiento-ano" name="fecha-nacimiento-ano" class="short-input" placeholder="Año">
+    </div>
+    <div>
+      <label for="ciudad-nacimiento">Ciudad de nacimiento:</label>
+      <input type="text" id="ciudad-nacimiento" name="ciudad-nacimiento" placeholder="Ciudad de nacimiento">
+    </div>
+    <div>
+      <label for="pais-nacimiento">País de nacimiento:</label>
+      <input type="text" id="pais-nacimiento" name="pais-nacimiento" placeholder="Spain">
+    </div>
+    <div>
+      <label for="nacionalidad">Nacionalidad:</label>
+      <input type="text" id="nacionalidad" name="nacionalidad" placeholder="Spain">
+    </div>
+    <div>
+      <label for="numero-pasaporte">Número de pasaporte:</label>
+      <input type="text" id="numero-pasaporte" name="numero-pasaporte" placeholder="Número de pasaporte">
+    </div>
+    <div>
+      <label for="pais-emision">País donde ha sido emitido su pasaporte:</label>
+      <input type="text" id="pais-emision" name="pais-emision" placeholder="Spain">
+    </div>
+    <div>
+      <label for="fecha-emision-dia">Fecha de emisión del pasaporte:</label>
+      <input type="number" id="fecha-emision-dia" name="fecha-emision-dia" class="short-input" placeholder="Día">
+      <input type="number" id="fecha-emision-mes" name="fecha-emision-mes" class="short-input" placeholder="Mes">
+      <input type="number" id="fecha-emision-ano" name="fecha-emision-ano" class="short-input" placeholder="Año">
+    </div>
+    <div>
+      <label for="fecha-vencimiento-dia">Fecha de vencimiento de su pasaporte:</label>
+      <input type="number" id="fecha-vencimiento-dia" name="fecha-vencimiento-dia" class="short-input" placeholder="Día">
+      <input type="number" id="fecha-vencimiento-mes" name="fecha-vencimiento-mes" class="short-input" placeholder="Mes">
+      <input type="number" id="fecha-vencimiento-ano" name="fecha-vencimiento-ano" class="short-input" placeholder="Año">
+    </div>
+  </form>
+</body>
+</html>
+
